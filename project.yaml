@@ -9,7 +9,6 @@ basic:
     pages:
         - /
         - '#menu'
-        - menu=aberto
     monitoring:
         days: {  }
         type: ''
@@ -26,7 +25,7 @@ advanced:
     headers:
         - { header: '', value: '' }
     cookies: ''
-    custom_js: "(function () {\n  const params = new URLSearchParams(window.location.search);\n  if (params.get('menu') === 'aberto') {\n    const btn = document.querySelector('#nav-icon2');\n    if (btn) {\n      btn.click();\n    }\n  }\n})();\n"
+    custom_js: "if (window.location.hash === '#menu') {\n  const btn = document.querySelector('#nav-icon2');\n  if (btn) {\n    btn.click();\n  }\n}\n"
     custom_css: ''
     mock_content:
         - { selector: '', type: title }
