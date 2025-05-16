@@ -8,7 +8,6 @@ basic:
         - 1366
     pages:
         - /
-        - '#menu'
     monitoring:
         days: {  }
         type: ''
@@ -25,7 +24,7 @@ advanced:
     headers:
         - { header: '', value: '' }
     cookies: ''
-    custom_js: "setTimeout(function () {\n  if (window.location.hash === '#menu') {\n    const btn = document.querySelector('#nav-icon2');\n    if (btn) {\n      // Simula evento real de clique mais completo\n      btn.dispatchEvent(new MouseEvent('mouseover', { bubbles: true }));\n      btn.dispatchEvent(new MouseEvent('mousedown', { bubbles: true }));\n      btn.dispatchEvent(new MouseEvent('mouseup', { bubbles: true }));\n      btn.dispatchEvent(new MouseEvent('click', { bubbles: true }));\n    }\n    \n    const menu = document.querySelector('.region.region-header');\n    if (menu) {\n      menu.classList.add('active');\n      menu.style.display = 'block';\n      menu.style.opacity = '1';\n      menu.style.visibility = 'visible';\n      menu.style.height = 'auto';\n      menu.style.overflow = 'visible';\n    }\n  }\n}, 2000);\n"
+    custom_js: "/*if (window.location.hash === '#menu') {\n  setTimeout(function () {\n    const btn = document.querySelector('#nav-icon2');\n    if (btn) {\n      btn.click();\n    }\n  }, 1000); \n}\n*/\n\n"
     custom_css: ''
     mock_content:
         - { selector: '', type: title }
