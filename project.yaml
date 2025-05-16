@@ -25,7 +25,7 @@ advanced:
     headers:
         - { header: '', value: '' }
     cookies: ''
-    custom_js: "if (window.location.hash === '#menu') {\n  setTimeout(function () {\n    const btn = document.querySelector('#nav-icon2');\n    if (btn) {\n      btn.click();\n    }\n  }, 1000); "
+    custom_js: "if (window.location.hash === '#menu') {\n  setTimeout(function () {\n    const btn = document.querySelector('#nav-icon2');\n    if (btn) {\n      btn.click();\n    }\n  }, 1000); \n}\n"
     custom_css: "/*if (window.location.hash === '#menu') {\n  setTimeout(function () {\n    const btn = document.querySelector('#nav-icon2');\n    if (btn) {\n      btn.click();\n    }\n  }, 1000); \n}\n*/"
     mock_content:
         - { selector: '', type: title }
