@@ -8,7 +8,7 @@ basic:
         - 1366
     pages:
         - /
-        - menu=aberto
+        - menu
     monitoring:
         days: {  }
         type: ''
