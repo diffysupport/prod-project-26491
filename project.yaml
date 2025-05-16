@@ -19,7 +19,7 @@ basic:
         compare_with_fresh: production
 advanced:
     mask: ''
-    remove: ''
+    remove: '.banner-container .slick-slide'
     isolate: ''
     delay: 15
     scroll: true
