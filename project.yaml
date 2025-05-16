@@ -20,7 +20,7 @@ basic:
 advanced:
     mask: ''
     remove: '.banner-container .slick-slide'
-    isolate: ''
+    isolate: .cookiesjsr-banner
     delay: 15
     scroll: true
     headers:
