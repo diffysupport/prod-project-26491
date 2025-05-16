@@ -19,7 +19,7 @@ advanced:
     mask: ''
     remove: '.banner-container .slick-slide'
     isolate: .cookiesjsr-banner
-    delay: 15
+    delay: 20
     scroll: true
     headers:
         - { header: '', value: '' }
