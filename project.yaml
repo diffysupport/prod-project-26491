@@ -24,7 +24,7 @@ advanced:
     headers:
         - { header: '', value: '' }
     cookies: ''
-    custom_js: "setTimeout(function () {\n  const btn = document.querySelector('#nav-icon2');\n  const container = document.querySelector('.container-menu');\n  if (btn) {\n    // Tenta simular clique com eventos mouse para forçar abrir\n    btn.dispatchEvent(new MouseEvent('mouseover', { bubbles: true }));\n    btn.dispatchEvent(new MouseEvent('mousedown', { bubbles: true }));\n    btn.dispatchEvent(new MouseEvent('mouseup', { bubbles: true }));\n    btn.dispatchEvent(new MouseEvent('click', { bubbles: true }));\n    btn.classList.add('open');\n  }\n  if (container) {\n    container.classList.add('open');\n    container.style.display = 'block';\n    container.style.opacity = '1';\n    container.style.visibility = 'visible';\n    container.style.height = 'auto';\n    container.style.overflow = 'visible';\n  }\n}, 3000);\n"
+    custom_js: "setTimeout(function () {\n    const btn = document.querySelector('#nav-icon2');\n    if (btn) {\n      btn.click();\n    }\n  }, 1000); \n}"
     custom_css: "/*if (window.location.hash === '#menu') {\n  setTimeout(function () {\n    const btn = document.querySelector('#nav-icon2');\n    if (btn) {\n      btn.click();\n    }\n  }, 1000); \n}\n*/"
     mock_content:
         - { selector: '', type: title }
