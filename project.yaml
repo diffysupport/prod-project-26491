@@ -17,7 +17,7 @@ basic:
         compare_with_fresh: production
 advanced:
     mask: ''
-    remove: '.banner-container .slick-slide'
+    remove: ''
     isolate: .cookiesjsr-banner
     delay: 20
     scroll: true
